@@ -634,7 +634,6 @@ body {
 
 .backdrop.is-hidden {
   opacity: 0;
-  /* visibility: hidden; */
   pointer-events: none;
 }
 
@@ -646,6 +645,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 24px;
   border-radius: 4px;
 
   background-color: #fcfcfd;
@@ -659,17 +659,17 @@ body {
 .close-btn-thumb {
   display: flex;
   justify-content: end;
+  padding-bottom: 24px;
 }
 
 .close-btn {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
-  margin-top: 24px;
 
-  margin-right: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
@@ -689,8 +689,6 @@ body {
 
 .form {
   width: 360px;
-  margin-right: 24px;
-  margin-left: 24px;
 }
 
 .form-field {
@@ -708,9 +706,13 @@ body {
   text-align: center;
 }
 
-.form-label:nth-last-child(n + 1) {
+.form-label {
   margin-top: 8px;
   margin-bottom: 4px;
+}
+
+.form-label-name {
+  margin-top: 0;
 }
 
 .form-label {
@@ -718,10 +720,6 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-}
-
-.form-input:nth-child(1) {
-  margin-top: 8px;
 }
 
 .form-input {
@@ -736,8 +734,13 @@ body {
 
 .logo-form {
   position: absolute;
-  top: 38px;
-  left: 19px;
+  top: 37px;
+  left: 16px;
+}
+
+.logo-form-person {
+  position: absolute;
+  top: 31px;
 }
 
 .form-input:focus {
@@ -756,6 +759,8 @@ body {
 }
 
 .comment {
+  width: 360px;
+  height: 120px;
   padding-top: 8px;
   padding-left: 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -785,18 +790,18 @@ body {
 }
 
 .privacy-policy {
+  margin-left: 3px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  margin-left: 3px;
 }
 
 .icon {
-  margin-right: 8px;
   display: inline-block;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   background-image: url(../img/checkbox/checkbox-unclick.svg);
 }
 
@@ -812,7 +817,6 @@ body {
 .btn-submit {
   width: 169px;
   margin-top: 24px;
-  margin-bottom: 24px;
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
@@ -836,7 +840,7 @@ body {
 .footer-form {
   display: flex;
   justify-content: center;
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .footer-form-label {
@@ -870,7 +874,7 @@ body {
 }
 
 .footer-form-input:focus {
-  border: 1px solid #4D5AE5;
+  border: 1px solid #4d5ae5;
   border-radius: 4px;
 }
 
